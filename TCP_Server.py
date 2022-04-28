@@ -21,7 +21,7 @@ while True:
 
     #Message after successful connection
     message = 'Server is connected' + "\r\n"
-    clientsocket.send(message)
+    clientsocket.send(message.encode('ascii'))
 
     clientsocket.close()
  
